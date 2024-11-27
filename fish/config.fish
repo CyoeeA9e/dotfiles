@@ -14,7 +14,7 @@ end
 if set -q ZELLIJ
 else
   if set -q TERM
-    zellij
+	  # zellij
   end
 end
 
