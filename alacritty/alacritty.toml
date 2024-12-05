@@ -1,0 +1,10 @@
+[general]
+import = [
+  "~/.config/alacritty/everforest_dark.toml"
+]
+
+[window]
+dynamic_padding = true
+
+[font]
+normal = { family = "fira code", style = "Regular" }
