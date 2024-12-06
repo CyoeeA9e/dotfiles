@@ -1,7 +1,5 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-end
-
 function y
   set tmp (mktemp -t "yazi-cwd.XXXXXX")
   yazi $argv --cwd-file="$tmp"
@@ -10,11 +8,4 @@ function y
   end
   rm -f -- "$tmp"
 end
-
-if set -q ZELLIJ
-else
-  if set -q TERM
-	  # zellij
-  end
 end
-

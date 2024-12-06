@@ -23,8 +23,9 @@
     "modules-right": [
         // "mpd",
         "idle_inhibitor",
-        "pulseaudio",
-        // "network",
+        // "pulseaudio",
+	"wireplumber",
+        "network",
         "power-profiles-daemon",
         "cpu",
         "memory",
@@ -32,7 +33,7 @@
         // "backlight",
         "keyboard-state",
         // "sway/language",
-        // "battery",
+        "battery",
         // "battery#bat2",
         "tray"
         // "custom/power"
@@ -177,6 +178,21 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "wireplumber": {
+        // "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon} ",
+        "format-muted": " {format_source}",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
