@@ -1,0 +1,7 @@
+#!/bin/bash
+
+USER=$(whoami)
+
+source ./env
+
+incus start $NAME

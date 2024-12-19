@@ -1,0 +1,17 @@
+#!/bin/bash
+
+USER=root
+IMAGE=ubuntu
+TAG=24.04
+MEM=8
+CPU=4
+
+source ./env
+
+incus create images:$IMAGE/$TAG $NAME --vm
+incus config set $NAME boot.autostart=false
+# update id map
+printf "uid $(id -u) 1000\ngid $(id -g) 1000" | incus config set $NAME raw.idmap -
+incus config device add $NAME workspace disk source=$PWD path=/home/$USER/workspace
+incus config set $NAME limits.memory=${MEM}GiB
+incus config set $NAME limits.cpu=$CPU
