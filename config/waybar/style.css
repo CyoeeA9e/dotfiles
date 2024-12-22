@@ -2,7 +2,7 @@
     border: none;
     font-family: Font Awesome, Roboto, Arial, sans-serif;
     font-size: 13px;
-    color: #ffffff;
+    color: #000000;
     border-radius: 20px;
 }
 
@@ -10,7 +10,7 @@ window {
 	/*font-weight: bold;*/
 }
 window#waybar {
-    background: rgba(255,255,255,0);
+    background: rgba(0xE0,0xE0,0xE0,255);
     border-radius: 16px;
 }
 
@@ -20,15 +20,15 @@ window#waybar {
 
 /*-----module groups----*/
 .modules-right {
-	background-color: rgba(0,43,51,0.85);
+    /*background-color: rgba(0,43,51,0.85);*/
     margin: 0 0 0 0;
 }
 .modules-center {
-	background-color: rgba(0,43,51,0.85);
+    /*background-color: rgba(0,43,51,0.85);*/
     padding: 0 20;
 }
 .modules-left {
-	background-color: rgba(0,119,179,0.85);
+    /*background-color: rgba(0,119,179,0.85);*/
     margin: 0 10px 0 0;
 }
 /*-----modules indv----*/
@@ -38,11 +38,13 @@ window#waybar {
 }
 #workspaces button.empty {
     box-shadow: inherit;
-	background-color: rgba(0,153,153,1);
+    background-color: rgba(0,153,153,1);
 }
 
 #workspaces button.active {
-	background-color: rgba(0,43,51,1);
+    /*background-color: rgba(0,43,51,1);*/
+    background-color: rgba(0,153,153,1);
+    color: #ffffff;
 }
 
 #clock,

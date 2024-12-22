@@ -16,9 +16,8 @@
         "custom/media"
     ],
     "modules-center": [
-        // "hyprland/window"
+         "hyprland/window"
 	// "date",
-        "clock"
     ],
     "modules-right": [
         // "mpd",
@@ -35,8 +34,9 @@
         // "sway/language",
         "battery",
         // "battery#bat2",
-        "tray"
+        "tray",
         // "custom/power"
+        "clock"
     ],
     "hyprland/window": {
         "format": "{}",
